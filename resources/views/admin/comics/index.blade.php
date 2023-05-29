@@ -3,8 +3,13 @@
 @section('content')
 <section class="bg-dark text-white">
 <div class="container py-5">
-    <h2 class="pb-4">Admin Area</h2>
-    <table class="table text-white">
+    <div class="section_head d-flex align-items-center justify-content-between pb-5">
+        <h2 class="">Admin Area</h2>
+        <a href="{{route('comics.create')}}" class="text-decoration-none">
+            <span class="py-2 px-3 bg-white text-dark rounded-4">Add new comic</span>
+        </a>
+    </div>
+    <table class="table text-white pt-4">
         <thead>
             <tr>
                 <th scope="col">Id</th>
