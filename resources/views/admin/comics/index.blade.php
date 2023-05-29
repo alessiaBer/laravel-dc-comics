@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h2 class="py-4">Admin Area</h2>
-    <table class="table">
+<section class="bg-dark text-white">
+<div class="container py-5">
+    <h2 class="pb-4">Admin Area</h2>
+    <table class="table text-white">
         <thead>
             <tr>
                 <th scope="col">Id</th>
@@ -40,4 +41,5 @@
         </tbody>
     </table>
 </div>
+</section>
 @endsection
