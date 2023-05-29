@@ -13,10 +13,12 @@
                 @foreach($comics as $comic)
                 <div class="col">
                     <div class="card rounded-0 border-0 bg-transparent pb-4">
+                        <a href="{{route('comic', $comic->id)}}">
                         <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                         <div class="card_text">
                             <span class="text-uppercase text-white">{{$comic['title']}}</span>
                         </div>
+                    </a>
                     </div>
                 </div>
                 @endforeach

@@ -75,3 +75,15 @@ header {
         }
     }
 }
+
+.primary-stripe {
+    background-color: $primary;
+    height: 70px;
+}
+
+.comic_container {
+    width: 60%;
+    .img_container {
+        top: -300px;
+    }
+}
