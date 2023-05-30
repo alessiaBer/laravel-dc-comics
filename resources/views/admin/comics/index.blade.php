@@ -34,7 +34,7 @@
                     <a href="{{route('comics.show', $comic->id)}}" class="text-decoration-none index-actions">
                         <span class="bg-primary text-white p-1 rounded-1">Show</span>
                     </a>
-                    <a href="#" class="text-decoration-none index-actions">
+                    <a href="{{route('comics.edit', $comic->id)}}" class="text-decoration-none index-actions">
                         <span class="bg-warning text-dark p-1 rounded-1">Edit</span>
                     </a>
                     <a href="#" class="text-decoration-none index-actions">
