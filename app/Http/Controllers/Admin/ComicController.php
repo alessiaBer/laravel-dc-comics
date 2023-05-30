@@ -61,9 +61,6 @@ class ComicController extends Controller
         return view('admin.comics.show', compact('comic'));
     }
 
-
-
-    /****** Non fare ⤵️ ******/
     /**
      * Show the form for editing the specified resource.
      *
@@ -106,6 +103,7 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+        return to_route('comics.index');
     }
 }

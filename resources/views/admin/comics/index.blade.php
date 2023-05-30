@@ -37,9 +37,15 @@
                     <a href="{{route('comics.edit', $comic->id)}}" class="text-decoration-none index-actions">
                         <span class="bg-warning text-dark p-1 rounded-1">Edit</span>
                     </a>
-                    <a href="#" class="text-decoration-none index-actions">
+                    <!-- method without confirmation -->
+                    <form action="{{route('comics.destroy', $comic->id)}}" method="post" class="d-inline-block">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="delete_button index-actions bg-danger text-white border-0 rounded-1">Delete</button>
+                    </form>
+                    <!-- <a href="{{route('comics.destroy', $comic->id)}}" class="text-decoration-none index-actions">
                         <span class="bg-danger text-white p-1 rounded-1">Delete</span>
-                    </a>
+                    </a> -->
                 </td>
             </tr>
             @endforeach
