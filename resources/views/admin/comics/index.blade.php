@@ -45,14 +45,14 @@
                         </form> -->
                         <!-- method with modal for confirmation -->
                         <!-- anchor tag that triggers modal-->
-                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            class="text-decoration-none index-actions">
-                            <span class="bg-danger text-white p-1 rounded-1">Delete</span>
-                        </a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal{{$comic->id}}" class="bg-danger border-0 index-actions rounded-1 text-white" style="padding: 2.5px 4px;">
+                            <!--<span class="bg-danger text-white p-1 rounded-1">Delete</span> -->
+                            Delete
+                        </button>
                         <!-- delete confirmation modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="modal{{$comic->id}}" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-{{$comic->id}}"
                             aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document"">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -77,7 +77,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                     </td>
                 </tr>
