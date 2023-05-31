@@ -9,6 +9,12 @@
                 <span class="py-2 px-3 bg-white text-dark rounded-4">Add new comic</span>
             </a>
         </div>
+        @if (session('message'))
+        <div class="alert alert-success" role="alert">
+            <strong>{{session('message')}}</strong>
+        </div>
+        
+        @endif
         <table class="table text-white pt-4">
             <thead>
                 <tr>
