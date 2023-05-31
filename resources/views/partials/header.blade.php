@@ -1,7 +1,7 @@
 <header>
     <div class="header_banner bg-primary text-white py-2">
         <div class="container my_container_lg text-uppercase d-flex justify-content-end">
-            <span class="d-inline-block pe-5">dc power&target; visa&comp;</span>
+            <span class="d-inline-block pe-5">dc power℠  visa®</span>
             <span>additional dc sites <i class="fa-solid fa-caret-down"></i></span>
         </div>
     </div>
@@ -16,12 +16,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ url('/')}}">Characters</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('comics')}}">comics</a>
+                    <li class="nav-item {{Route::currentRouteName() === 'comics' ? 'active' : ''}}">
+                        <a class="nav-link" href="{{route('comics')}}">comics</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/')}}">movies</a>
@@ -44,22 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/')}}">news</a>
                     </li>
-                    <!-- .dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{ url('/')}}" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            shop
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ url('/')}}">Action</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/')}}">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="{{ url('/')}}">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/')}}">shop <i class="fa-solid fa-caret-down text-primary"></i></a>
                     </li>
-                    <!-- /.dropdown -->
                 </ul>
             </div>
             <div class="input-group align-self-center">
