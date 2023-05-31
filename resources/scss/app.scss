@@ -1,44 +1,8 @@
+@use './partials/header' as *;
 @import "~bootstrap/scss/bootstrap";
 
 .my_container_lg {
     width: 70%;
-}
-
-header {
-    .header_banner {
-        font-family: "Roboto", sans-serif;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-    nav {
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 700;
-        font-size: 0.8rem;
-        li {
-            a.nav-link {
-                text-transform: uppercase;
-                color: black;
-                .dropdown-toggle::after {
-                    color: $primary !important;
-                }
-            }
-        }
-        .input-group {
-            border: none;
-            text-align: end;
-            border-bottom: 3px solid $primary;
-            width: 15%;
-            align-self: flex-end;
-            input {
-                border: none;
-                padding-right: 0;
-            }
-            span {
-                border: none;
-                background-color: transparent;
-            }
-        }
-    }
 }
 
 .jumbotron {
