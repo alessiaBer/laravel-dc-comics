@@ -24,7 +24,7 @@
                 @endforeach
             </div>
             <div class="my_btn text-center">
-                <button class="btn btn-primary text-uppercase rounded-0 my-0 mx-auto">Load More</button>
+                <button class="btn btn-primary text-uppercase rounded-0 my-0 mx-auto px-5">Load More</button>
             </div>
         </div>
 
