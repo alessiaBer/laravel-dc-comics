@@ -11,6 +11,7 @@
     background-size: cover;
 }
 
+
 .current_series {
     .section_title {
         padding: 1rem 1.5rem;
@@ -58,8 +59,70 @@
 
 .comic_container {
     width: 60%;
+    padding-bottom: 3rem;
     .img_container {
         top: -300px;
+    }
+
+    h2 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: rgb(0, 0, 50);
+        font-weight: 700;
+    }
+    .price-banner {
+        background-color: #55ba59;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        .banner_left {
+            padding: 1rem;
+            width: 73%;
+            .price, .avail {
+                color: #94df97;
+            }
+        }
+        .check_avail{
+            padding: 1rem;
+            border-left: 1px solid #2f6932;
+        }
+    }
+    .description {
+        font-size: 0.75rem;
+    }
+    h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        color: gray;
+    }
+    .adv-container {
+        height: 100%;
+        img {
+            height: 270px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+        .banner-title {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            color: white;
+            top: 60px;
+            left: 10px;
+            font-size: 1.2rem;
+        }
+        .btn {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            bottom: 10px;
+            left: 10px;
+        }
+        .visa {
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
     }
 }
 
@@ -70,10 +133,6 @@
 .create_container {
     width: 70%;
 }
-
-/* .delete_button {
-    padding: 3px;
-} */
 
 footer {
     .footer-top {
@@ -87,8 +146,9 @@ footer {
                 font-weight: 500;
             }
             li, span {
-                    font-size: 0.65rem;
+                    font-size: 0.7rem;
                     color: grey;
+                    line-height: 1.1rem;
             }
             span a {
                 text-decoration: none;
