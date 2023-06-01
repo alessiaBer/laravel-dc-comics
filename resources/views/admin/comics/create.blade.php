@@ -3,12 +3,16 @@
 @section('content')
 <section class="bg-dark text-white">
     <div class="container create_container py-5">
+        @include('partials.validation_error')
         <form class="row g-3" action="{{route('comics.store')}}" method="post">
             @csrf
 
             <div class="col-12">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title">
+                <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title">
+                @error('title')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
             </div>
             <div class="col-12">
                 <label for="description" class="form-label">Description</label>
