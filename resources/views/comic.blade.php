@@ -45,10 +45,8 @@
                <button type="button" class="btn btn-warning rounded-0 position-absolute">APPLY NOW</button>
                <span class="visa d-block text-uppercase position-absolute">dc power visa</span>
             </div>
-            
-
         </div>
     </div>
 </div>
-
+@include('partials.banner')
 @endsection
